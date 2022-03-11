@@ -90,18 +90,17 @@
 | Query Description                                                 | HTTP Verb | Url                        |
 | ----------------------------------------------------------------- | --------- | -------------------------- |
 | Get service metadata.                                             | GET       | /$metadata                 |
-| Get all customers.                                                |           |                            |
-| Get a customer with "ALFKI" id.                                   |           |                            |
-| Get all orders.                                                   |           |                            |
-| Get an order with "10248" id.                                     |           |                            |
-| Get all orders for a customer with "ANATR" id.                    |           |                            |
-| Get a customer for an order with "10248" id.                      |           |                            |
-| Get a customer for an order with "10248" id.                      |           |                            |
-| Get all customers from Germany.                                   |           |                            |
-| Get all orders shipped to France in 1997.                         |           |                            |
-| Get all products with units in stock less than 20.                |           |                            |
-| Get all orders shipped by company "Speedy Express".               |           |                            |
-| Get all orders shipped to UK with employees.                      |           |                            |
+| Get all customers.                                                | GET       | /Customers                 |
+| Get a customer with "ALFKI" id.                                   | GET       | /Customers('ALFKI')        |
+| Get all orders.                                                   | GET       | /Orders                    |
+| Get an order with "10248" id.                                     | GET       | /Orders(10248)             |
+| Get all orders for a customer with "ANATR" id.                    | GET       | /Customers('ANATR')/Orders |
+| Get a customer for an order with "10248" id.                      | GET       | /Orders(10248)/Customer    |
+| Get all customers from Germany.                                   | GET       | you can find in collection |
+| Get all orders shipped to France in 1997.                         | GET       | you can find in collection |
+| Get all products with units in stock less than 20.                | GET       | you can find in collection |
+| Get all orders shipped by company "Speedy Express".               | GET       | you can find in collection |
+| Get all orders shipped to UK with employees.                      | GET       | you can find in collection |
 
 Создайте самостоятельно еще минимум 5 сложных запросов и запишите их в таблицу.
 
